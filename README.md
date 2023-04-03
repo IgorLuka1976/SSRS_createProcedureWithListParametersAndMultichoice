@@ -24,3 +24,4 @@ and now the question arises how to create a filter correctly in the procedure.
 If simple change from 'WHERE BusinessEntityID=@param1' To 'WHERE BusinessEntityID IN (@param1)' and change type of parametr from INT to NVARCHAR(MAX)
 , then procedure will saved without any error
 , but it also won't work in SSRS Report: 
+https://docs.google.com/document/d/1_LfclIXal3VW9NzgXJUkdqby6GfyGM8tRUHTfcWBHKM/edit?usp=sharing
