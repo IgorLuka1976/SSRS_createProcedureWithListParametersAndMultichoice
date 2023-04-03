@@ -1,2 +1,21 @@
-# SSRS_createProcedureWithListParametr
+# SSRS_createProcedureWithListParametersAndMultichoice
+
 How to create Procedure, which will be use in SSRS, appling List Parametr
+
+For design example report, need to create simple procedure with INT parametr:
+
+USE AdventureWorks2019
+GO
+
+CREATE PROCEDURE testForSSRS @param1 INT
+AS
+
+SELECT *
+FROM HumanResources.Employee
+WHERE BusinessEntityID=@param1
+
+Now will try to design simple report with Multichoice Parametr
+and have a error. Description by target
+https://docs.google.com/document/d/1-zoETjH9a2diyPg9tFjFG7_StRrwV8pHQFDPSFM_weI/edit?usp=sharing
+
+The first solution to this problem is to replace the data type of the parameter from INT to NVARCHAR(MAX)
