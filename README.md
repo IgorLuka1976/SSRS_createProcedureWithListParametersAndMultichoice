@@ -33,5 +33,5 @@ Solution-Step3:
 Change type of filter From WHERE To JOIN. In this example:
 change row in Procedure 'WHERE BusinessEntityID IN (@param1)' To 'INNER JOIN STRING_SPLIT(@param1, ',') t ON t.value=BusinessEntityID'
 
-Refresh Report.
+Refresh Report or Best ReCreate Report, if won't to refresh.
 And It's work!
