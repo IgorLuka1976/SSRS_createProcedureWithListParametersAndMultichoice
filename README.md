@@ -29,3 +29,8 @@ If simple change from 'WHERE BusinessEntityID=@param1' To 'WHERE BusinessEntityI
 Step2:
 https://docs.google.com/document/d/1_LfclIXal3VW9NzgXJUkdqby6GfyGM8tRUHTfcWBHKM/edit?usp=sharing
 
+Solution-Step3:
+Change type of filter From WHERE To JOIN. In this example:
+change row in Procedure 'WHERE BusinessEntityID IN (@param1)' To 'INNER JOIN STRING_SPLIT(@param1, ',') t ON t.value=BusinessEntityID'
+
+And It's work!
