@@ -21,5 +21,6 @@ https://docs.google.com/document/d/1-zoETjH9a2diyPg9tFjFG7_StRrwV8pHQFDPSFM_weI/
 The first solution to this problem is to replace the data type of the parameter from INT to NVARCHAR(MAX).
 and now the question arises how to create a filter correctly in the procedure.
 
-If simple change from 'WHERE BusinessEntityID=@param1' To 'WHERE BusinessEntityID IN (@param1)', then procedure will saved without any error
+If simple change from 'WHERE BusinessEntityID=@param1' To 'WHERE BusinessEntityID IN (@param1)' and change type of parametr from INT to NVARCHAR(MAX)
+, then procedure will saved without any error
 , but it also won't work in SSRS Report: 
